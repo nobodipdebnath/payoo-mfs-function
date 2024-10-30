@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo mfs Function</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex justify-center">
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3">
+                <!-- account balance start -->
+                <div class="stats shadow">
+                    <div class="flex stat">
+                      <div>
+                        <img class="w-14" src="image/payoo.png" alt="">
+                      </div>
+                      <div>
+                        <div class="stat-value" id="current-amount">9400</div>
+                        <div class=" text-center stat-desc">Balance</div>
+                      </div>
+                    </div>
+                </div>
+                <!-- account balance end -->
+                <div class="divider"></div>
+
+                <!-- button section start -->
+                <div class="w-4/5 mx-auto">
+                  <div id="show-add-money-form" class="btn">
+                    <img class="h-12 w-12 justify-center flex" src="image/05-add-money_1666160847291.webp" alt="">
+                    <p>Add Money</p>
+                  </div>
+                  <div id="show-cash-out-form" class="btn">
+                    <img class="h-12 w-12" src="image/03-cash-out_1666158620022.webp" alt="">
+                    <p>Cash out</p>
+                  </div>
+                  <div class="btn">
+                    <img class="h-12 w-12" src="image/04-payment_1666159400113.webp" alt=""> 
+                    <p>Pay Bil</p>                   
+                  </div>
+                  <div class="btn">
+                    <img src="image/01-send-money_1666154832042.webp" class="w-12 h-12" alt="">
+                    <p>Sent Money</p>
+                  </div>
+                  <div class="btn">
+                    <img src="image/02-mobile-recharge_1666155167971.webp" class="w-12 h-12" alt="">
+                    <p>Mobile Recharge</p>
+                  </div>
+                  <div class="btn">
+                    <img src="image/13_1669034799648.webp" class="w-12 h-12" alt="">
+                    <p>Donet</p>
+                  </div>
+                  <div id="show-history-section" class="btn">
+                    <img class="h-10 w-10" src="image/payoo.png" alt="">
+                    <p>Transaction History</p>
+                  </div>
+                <!-- button section end -->
+                <div class="divider"></div>
+
+                <!-- add money form start -->
+                <div id="add-money-form" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="add-money-input" type="text" placeholder="Enter amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin Number</span>
+                        </label>
+                        <input autocomplete="off" type="password" placeholder="Enter pin number" id="input-pin-number" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                      </div>
+                    </form>
+                </div>
+                <!-- add money form end -->
+                <!-- cash out form start -->
+                <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Amount</span>
+                      </label>
+                      <input id="input-cash-out" type="text" placeholder="Enter amount" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin Number</span>
+                      </label>
+                      <input autocomplete="off" type="password" placeholder="Enter pin number" id="input-cashout-pin" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+                    </div>
+                  </form>
+              </div>
+                <!-- cash out form end -->
+
+                <!-- history section start -->
+              <div class="hidden " id="history-section">
+                <h2 class="text-3xl font-bold text-center">Transaction History</h2>
+                <div id="transaction-container">
+
+                </div>
+              </div>
+                <!-- history section end -->
+
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="js/libraby.js"></script> -->
+     <script src="js/library2.js"></script>
+    <script src="js/add-money-to.js"></script>
+    <script src="js/cash-out.js"></script>
+    <script src="js/fetures.js"></script>
+    <!-- <script src="js/add-money.js"></script> -->
+</body>
+</html>
